@@ -1,0 +1,32 @@
+{
+  "name": "shifttt",
+  "version": "0.0.0",
+  "main": "lib/shifttt.js",
+  "description": "A simple, local ifttt clone.",
+  "homepage": "https://github.com/atask/shifttt",
+  "bugs": "https://github.com/atask/shifttt/issues",
+  "author": {
+    "name": "Allan Taschini",
+    "email": "atask@users.noreply.github.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/atask/shifttt"
+  },
+  "license": "MIT",
+  "files": [
+    "lib"
+  ],
+  "keywords": [],
+  "devDependencies": {
+    "grunt-contrib-jshint": "^0.10.0",
+    "grunt-contrib-nodeunit": "^0.3.3",
+    "grunt-contrib-watch": "^0.6.1",
+    "load-grunt-tasks": "^0.4.0",
+    "time-grunt": "^0.3.1",
+    "jshint-stylish": "^0.2.0"
+  },
+  "scripts": {
+    "test": "grunt"
+  }
+}
