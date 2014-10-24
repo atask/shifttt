@@ -1,27 +1,9 @@
 'use strict';
 
-var shifttt = require('../lib/shifttt.js');
+var shifttt = require('../lib/shifttt.js'),
+	chai = require('chai');
 
 /*
-  ======== A Handy Little Nodeunit Reference ========
-  https://github.com/caolan/nodeunit
-
-  Test methods:
-    test.expect(numAssertions)
-    test.done()
-  Test assertions:
-    test.ok(value, [message])
-    test.equal(actual, expected, [message])
-    test.notEqual(actual, expected, [message])
-    test.deepEqual(actual, expected, [message])
-    test.notDeepEqual(actual, expected, [message])
-    test.strictEqual(actual, expected, [message])
-    test.notStrictEqual(actual, expected, [message])
-    test.throws(block, [error], [message])
-    test.doesNotThrow(block, [error], [message])
-    test.ifError(value)
-*/
-
 exports.shifttt = {
   setUp: function(done) {
     // setup here
@@ -34,3 +16,16 @@ exports.shifttt = {
     test.done();
   }
 };
+*/
+
+describe('shiftt', function(){
+   describe('#parse()', function(){
+       it('should parse long formed tags', function(){
+           var args = ['--depth=4', '--hello=world'];
+           var results = shifttt.parse(args);
+ 
+           expect(results).to.have.a.property('depth', 4);
+           expect(results).to.have.a.property('hello', 'world');
+       });
+   });
+});
