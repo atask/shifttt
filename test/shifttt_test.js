@@ -1,7 +1,7 @@
 'use strict';
 
 var shifttt = require('../lib/shifttt.js'),
-	chai = require('chai');
+	should = require('chai').should();
 
 /*
 exports.shifttt = {
@@ -19,13 +19,10 @@ exports.shifttt = {
 */
 
 describe('shiftt', function(){
-   describe('#parse()', function(){
-       it('should parse long formed tags', function(){
-           var args = ['--depth=4', '--hello=world'];
-           var results = shifttt.parse(args);
- 
-           expect(results).to.have.a.property('depth', 4);
-           expect(results).to.have.a.property('hello', 'world');
+   describe('#example()', function(){
+       it('should just pass', function(){
+           var foo = 4 + 5;
+           foo.should.equal(9);
        });
    });
 });
