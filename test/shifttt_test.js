@@ -19,10 +19,13 @@ exports.shifttt = {
 */
 
 describe('shiftt', function(){
-   describe('#example()', function(){
-       it('should just pass', function(){
-           var foo = 4 + 5;
-           foo.should.equal(9);
-       });
+   it('should just pass', function(){
+	   var foo = 4 + 5;
+	   foo.should.equal(9);
+   });
+   
+   it('also should just pass', function(){
+	   var foo = 5 + 5;
+	   foo.should.equal(10);
    });
 });
